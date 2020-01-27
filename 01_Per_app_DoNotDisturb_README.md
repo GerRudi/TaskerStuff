@@ -19,3 +19,16 @@ None
 **[Set_DnD.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3ASet+DnD)** Enables Do not Disturb
 
 **[Unset_DnD.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3AUnset+DnD)** Disables Do not Disturb
+
+
+# Tasker Description
+```
+Profile: AutoDnD (2)
+    	Restore: no
+    	Application: Duolingo or SimplyPiano
+    Enter: Set DnD (3)
+    	A1: Do Not Disturb [ Mode:Alarms ] 
+    
+    Exit: Unset DnD (5)
+    	A1: Do Not Disturb [ Mode:Allow All ]
+```
