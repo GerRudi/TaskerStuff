@@ -13,16 +13,16 @@ It might work with other devices without any further setup - or not at all.
 # Files (Click for Tasker import)
 
 ### Profile
-- **[01_BT_VW_connect.prf:](tbd)** Event when connectiong to your Bluetooth radio - **configure the MAC Address of your device**!
-- **[02_Do_Spotify.prf:](tbd)** Event to capture button press
-- **[03_Cooldown.prf:](tbd)** Event to trigger cooldown
+- **[01_BT_VW_connect.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A01_BT+VW+connect)** Event when connectiong to your Bluetooth radio - **configure the MAC Address of your device**!
+- **[02_Do_Spotify.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A02_Do+Spotify)** Event to capture button press
+- **[03_Cooldown.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A03_Cooldown)** Event to trigger cooldown
 
 ### Tasks (the profile already includes the tasks!)
 
-- **[01_BT_VW_Start.tsk:](tbd)** Tells tasker, that you're now connected to the bt device
-- **[01_BT_VW_End.tsk:](tbd)** Tells tasker that you're no longer connected to the bt device
-- **[02_Do_Spotify.tsk:](tbd)** Gets currently playing track and adds it to the playlist - **configure your Playlist URI**!
-- **[03_Timeout.tsk:](tbd)** Enables the cooldown so that the task wont run more than once for the same button press
+- **[01_BT_VW_Start.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3A01_BT+VW+Start)** Tells tasker, that you're now connected to the bt device
+- **[01_BT_VW_End.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3A01_BT+VW+End)** Tells tasker that you're no longer connected to the bt device
+- **[02_Do_Spotify.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3A02_Do+Spotify)** Gets currently playing track and adds it to the playlist - **configure your Playlist URI**!
+- **[03_Timeout.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3A03_Timeout)** Enables the cooldown so that the task wont run more than once for the same button press
 
 
 
