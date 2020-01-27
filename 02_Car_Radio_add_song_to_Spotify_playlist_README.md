@@ -17,7 +17,7 @@ It might work with other devices without any further setup - or not at all.
 - **[02_Do_Spotify.prf:](tbd)** Event to capture button press
 - **[03_Cooldown.prf:](tbd)** Event to trigger cooldown
 
-### Tasks
+### Tasks (the profile already includes the tasks!)
 
 - **[01_BT_VW_Start.tsk:](tbd)** Tells tasker, that you're now connected to the bt device
 - **[01_BT_VW_End.tsk:](tbd)** Tells tasker that you're no longer connected to the bt device
