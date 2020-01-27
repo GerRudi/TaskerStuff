@@ -5,6 +5,10 @@ This is really helpful when you try to concentrate.
 
 In this example, I'm using it together with Duolingo (learning languages) and Simply Piano (learning piano). 
 
+
+# Requirements (Add-ons)
+None
+
 # Files (Click for Tasker import)
 
 ### Profile
