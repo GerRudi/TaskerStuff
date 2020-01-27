@@ -13,13 +13,18 @@ It might work with other devices without any further setup - or not at all.
 # Files (Click for Tasker import)
 
 ### Profile
-**[tbd.prf:](tbd)** tbd
+- **[01_BT_VW_connect.prf:](tbd)** Event when connectiong to your Bluetooth radio - **configure the MAC Address of your device**!
+- **[02_Do_Spotify.prf:](tbd)** Event to capture button press
+- **[03_Cooldown.prf:](tbd)** Event to trigger cooldown
 
 ### Tasks
 
-**[tbd.tsk:](tbd)** tbd
+- **[01_BT_VW_Start.tsk:](tbd)** Tells tasker, that you're now connected to the bt device
+- **[01_BT_VW_End.tsk:](tbd)** Tells tasker that you're no longer connected to the bt device
+- **[02_Do_Spotify.tsk:](tbd)** Gets currently playing track and adds it to the playlist - **configure your Playlist URI**!
+- **[03_Timeout.tsk:](tbd)** Enables the cooldown so that the task wont run more than once for the same button press
 
-**[tbd.tsk:](tbd)** tbd
+
 
 # Idea, Motivation, Challenges and Lessons Learned
 
