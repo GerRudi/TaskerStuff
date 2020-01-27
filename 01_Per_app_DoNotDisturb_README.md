@@ -14,7 +14,7 @@ None
 ### Profile
 **[PerApp_Profile.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3APerApp_Profile)** Defines the apps that should use this feature
 
-### Tasks
+### Tasks (the profile already includes the tasks!)
 
 **[Set_DnD.tsk:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Task%3ASet+DnD)** Enables Do not Disturb
 
