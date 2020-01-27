@@ -55,3 +55,53 @@ Therefore I had to add some cooldowns using variables and the script was finally
 # Possible enhancements
 You could add a check if Spotify is actually currently running. 
 That way you can actually use the buttons in combination with other music players without any issues. 
+
+# Tasker descriptions
+
+```
+Profile: 01_BT VW connect (7)
+    	Restore: no
+    	State: BT Connected [ Name:* Address:33:33:33:33:33:33 ]
+    Enter: 01_BT VW Start (37)
+    	A1: Variable Set [ Name:%vActive To:4 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    
+    Exit: 01_BT VW End (38)
+    	A1: Variable Set [ Name:%vActive To:2 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ]
+```
+
+```
+Profile: 02_Do Spotify (28)
+    	Restore: no
+    	Event: Logcat Entry [ Output Variables:* Component:Avrcp_ext Filter:Cmd = 6on index = 0new entrytrue ]
+    Enter: 02_Do Spotify (39)
+    	A1: If [ %vActive < 1 ]
+    	A2: Variable Set [ Name:%vActive To:4 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	A3: AutoWeb Web Service [ Configuration:API: Spotify
+    API Action: Get Currently Playing Track
+    Market: US Timeout (Seconds):120 ] 
+    	A4: AutoWeb Web Service [ Configuration:API: Spotify
+    API Action: Add Tracks to a Playlist
+    Market: US
+    Playlist Id: 1337 Timeout (Seconds):120 ]
+```
+
+```
+Profile: 03_Cooldown (30)
+    	Restore: no
+    	Event: Variable Set [ Variable:%vActive Value:4 User Variables Only:Off ]
+    Enter: 03_Timeout (40)
+    	A1: If [ %vRunning neq 1 ]
+    	A2: Variable Set [ Name:%vRunning To:1 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	A3: Wait [ MS:0 Seconds:10 Minutes:0 Hours:0 Days:0 ] 
+    	A4: Variable Set [ Name:%vRunning To:0 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	A5: If [ %vActive eq 4 ]
+    	A6: Variable Set [ Name:%vActive To:0 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ]
+```
+
+
+
+
+
+
+
+
