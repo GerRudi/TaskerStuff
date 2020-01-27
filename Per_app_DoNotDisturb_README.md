@@ -5,10 +5,10 @@ This is really helpful when you try to concentrate.
 
 In this example, I'm using it together with Duolingo (learning languages) and Simply Piano (learning piano). 
 
-# Files
+# Files (Click for Tasker import)
 
 ### Profile
-**PerApp_Profile.prf:** Defines the apps that should use this feature
+**[PerApp_Profile.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3APerApp_Profile)** Defines the apps that should use this feature
 
 ### Tasks
 
