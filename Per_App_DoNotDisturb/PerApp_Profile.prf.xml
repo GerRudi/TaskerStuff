@@ -1,0 +1,42 @@
+<TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof2" ve="2">
+		<cdate>1579291520075</cdate>
+		<clp>true</clp>
+		<edate>1580150617360</edate>
+		<flags>8</flags>
+		<id>2</id>
+		<mid0>3</mid0>
+		<mid1>5</mid1>
+		<nme>Per App DnD</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.duolingo.app.LoginActivity</cls0>
+			<cls1>com.joytunes.simplypiano.ui.SplashScreen</cls1>
+			<flags>2</flags>
+			<label0>Duolingo</label0>
+			<label1>SimplyPiano</label1>
+			<pkg0>com.duolingo</pkg0>
+			<pkg1>com.joytunes.simplypiano</pkg1>
+		</App>
+	</Profile>
+	<Task sr="task3">
+		<cdate>1579291531970</cdate>
+		<edate>1579532437933</edate>
+		<id>3</id>
+		<nme>Set DnD</nme>
+		<Action sr="act0" ve="7">
+			<code>312</code>
+			<Int sr="arg0" val="3"/>
+		</Action>
+	</Task>
+	<Task sr="task5">
+		<cdate>1579292095749</cdate>
+		<edate>1579292108875</edate>
+		<id>5</id>
+		<nme>Unset DnD</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>312</code>
+			<Int sr="arg0" val="2"/>
+		</Action>
+	</Task>
+</TaskerData>
