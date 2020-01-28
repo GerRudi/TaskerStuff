@@ -7,13 +7,13 @@ When pressing "Repeat" or "Shuffle" on my car entertainment system, it automatic
 - This Task requires the [AutoWeb](https://play.google.com/store/apps/details?id=com.joaomgcd.autoweb&hl=en) addon to access the Spotify API (Paid App from the Playstore) 
 - This Profile requires [permissions to read system logs](https://tasker.joaoapps.com/userguide/en/help/ah_read_logs_grant.html)
 
-This setup is working with a Composition Media VW Infotainment system (with firmware) from 2014 in combination with my Android 10 devices (Android One Nokia 7 Plus) connected via Bluetooth. 
+This setup is working with a Composition Media VW Infotainment system (with firmware) from 2014 in combination with my Android 10 device (Android One Nokia 7 Plus) connected via Bluetooth. 
 It might work with other devices without any further setup - or not at all. 
 
 # Files (Click for Tasker import)
 
 ### Profile
-- **[01_BT_VW_connect.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A01_BT+VW+connect)** Event when connectiong to your Bluetooth radio - **configure the MAC Address of your device**!
+- **[01_BT_VW_connect.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A01_BT+VW+connect)** Event when connecting to your Bluetooth radio - **configure the MAC Address of your device**!
 - **[02_Do_Spotify.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A02_Do+Spotify)** Event to capture button press
 - **[03_Cooldown.prf:](https://taskernet.com/shares/?user=AS35m8nv%2F9kVVjaWNhsxWPMIrYDvleGnAAXvNLF0YGZMaXdHHvDCymFLorNzaH%2BXlk0dBJup&id=Profile%3A03_Cooldown)** Event to trigger cooldown
 
@@ -40,21 +40,21 @@ My car radio only offers PLAY, NEXT, REPEAT and SHUFFLE buttons, but I never use
 So I was wondering if I could remap their functionality in some way. 
 
 At first I was hoping these buttons are just simple KeyInput events and tried to capture them with AutoInput - no success. 
-Then I analyzed the Bluetooth Android log (btsnoop_hci.log) to understand what's going on. 
-This was fun and I learned a bit about how some Bluetooth protocols work but tasker has no way to capture these incoming bluetooth commands. 
+Then I analyzed the Bluetooth Android log (btsnoop_hci.log) with Wireshark to understand what's going on. 
+This was fun and I learned a bit about how some Bluetooth protocols work but tasker has no way to capture these incoming Bluetooth commands. 
 
 Some people on the /r/Tasker Subreddit then told me that Tasker "recently" got an update and is now able to read system logs. 
-To setup a logcat task can be a bit tricky using only the Tasker App so I first captured the logs using MatLog Libre from F-Droid. 
+Setting up a logcat task can be a bit tricky using only the Tasker App so I first captured the logs using MatLog Libre from F-Droid. 
 
 After that it was a bit of trial and error to find a reliable Logcat entry (as of writing this, there's also no way to use wildcards for the logcat entries, which also made things harder). 
-I found an entry that was always written when I pressed the repeat/shuffle button but this lead to the next (and last) problem. 
+I found an entry that was always written when I pressed the repeat/shuffle button but this lead to the next (and final) problem. 
 This entry also gets written immediately after connecting to the radio unit and can also be triggered several times while only pressing the button once. 
 Therefore I had to add some cooldowns using variables and the script was finally working great! 
 
 
 # Possible enhancements
-You could add a check if Spotify is actually currently running. 
-That way you can actually use the buttons in combination with other music players without any issues. 
+You could add a condition to check if Spotify is actually currently running. 
+That way you can actually use the buttons in combination with other music players without any possible side effects. 
 
 # Tasker descriptions
 
