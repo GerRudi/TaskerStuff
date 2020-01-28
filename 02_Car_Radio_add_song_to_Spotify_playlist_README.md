@@ -56,6 +56,8 @@ Therefore I had to add some cooldowns using variables and the script was finally
 You could add a condition to check if Spotify is actually currently running. 
 That way you can actually use the buttons in combination with other music players without any possible side effects. 
 
+The "01 BT Connect start" Task could also be used for additional actions like "Launch Spotify" or "Set Media Volume". 
+
 # Tasker descriptions
 
 ```
